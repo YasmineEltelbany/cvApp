@@ -28,7 +28,7 @@ void main() {
                 height: 20,
               ),
               Text(
-                "Phone : 010101010",
+                "Phone : 0101010101",
                 style: TextStyle(fontSize: 25),
               ),
               SizedBox(
