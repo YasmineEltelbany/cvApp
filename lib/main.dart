@@ -5,40 +5,43 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: Scaffold(
       appBar: AppBar(
-        title: Text("Login Screen", style:  TextStyle(fontSize: 25),),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-            mainAxisAlignment:  MainAxisAlignment.center,
+        title: Text(
+            "CV App",
+            style: TextStyle(fontSize: 25),
+          ),
+          centerTitle: true,
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-          TextField(
-            decoration: InputDecoration(
-              label: Text("User Name"),
-                enabledBorder:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-                focusedBorder:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(20))),
+              Image.asset("assets/images/woman.png", width: 150),
+              SizedBox(
+                height: 100,
+              ),
+              Text(
+                "Name : Yasmine Eltelbany",
+                style: TextStyle(fontSize: 25),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                "Phone : 010101010",
+                style: TextStyle(fontSize: 25),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Call Me",
+                    style: TextStyle(fontSize: 20),
+                  ))
+            ],
           ),
-          SizedBox(height: 20,),
-          TextField(
-            decoration: InputDecoration(
-                label: Text("Password"),
-                enabledBorder:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-                focusedBorder:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(20))),
-          ),
-          SizedBox(height: 20,),
-          ElevatedButton(
-              onPressed: () {},
-              child: Text(
-                "login",
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              ))
-        ]),
-      ),
-    ),
+        )),
   ));
 }
